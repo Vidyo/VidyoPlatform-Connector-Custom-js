@@ -1,0 +1,210 @@
+* {
+	margin:       0;
+	padding:      0;
+}
+html, body {
+	width:        100%;
+	height:       100%;
+	font-family: 'robotolight', 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+}
+#vidyoConnectorApp {
+}
+#options {
+	position:   absolute;
+	top:        0px;
+	left:       0px;
+	bottom:     60px;
+	width:      375px;
+	text-align: center;
+	z-index:    99;
+	overflow-y: scroll;
+}
+#optionsVisibilityButton {
+	position: absolute;
+	z-index:  100;
+}
+#renderer {
+	position: absolute;
+	top:      0px;
+	right:    0px;
+	bottom:   60px;
+	z-index:  99;
+}
+#helper {
+	position:    absolute;
+	top:         0px;
+	left:        0px;
+	width:       100%;
+	height:      100%;
+	background:  white;
+	color:       #5d5d5d;
+	font-weight: 300;
+}
+#helper table {
+	max-width: 1200px;
+	height:    100%;
+	margin:    auto;
+}
+#helper td {
+	vertical-align: middle;
+	text-align:     center;
+	width:          800px;
+	padding:        10px;
+}
+#helper img {
+	vertical-align: middle;
+}
+.helperCheck {
+	vertical-align: middle;
+	text-align:     left;
+	padding:        10px;
+	font-size:      16px;
+}
+.helperHeader, .helperFooter {
+	padding: 30px 0px;
+}
+#helperText {
+	font-size: 36px;
+}
+#helperText p {
+	font-size: 16px;
+}
+
+.helperFooter a {
+	font-size:        18px;
+	text-align:       center;
+	text-decoration:  none;
+	background-color: #83C36D;
+	display:          inline-block;
+	padding:          14px 0px 14px 0px;
+	color:            white;
+	font-weight:      normal;
+	width:            200px;
+	margin:           auto;
+	border-radius:    5px;
+}
+.helperFooterTwoButton a {
+	width: 150px;
+}
+
+#helper ul {
+	display:         inline-block;
+	list-style-type: none;
+}
+
+.toolbar {
+	position: absolute;
+	width:    100%;
+	bottom:   0px;
+	height:   60px;
+}
+
+#toolbarLeft {
+	background-color: rgb(19, 38, 58);
+	text-align:       left;
+}
+#toolbarCenter {
+	text-align: center;
+}
+#toolbarRight {
+	text-align: right;
+}
+.rendererWithOptions {
+	left: 375px;
+}
+.rendererFullScreen {
+	left: 0px;
+}
+.rendererFullScreenPermanent {
+	left: 0px;
+}
+.hidden {
+	display: none;
+}
+.hiddenPermanent {
+	display: none;
+}
+#error {
+	color:     red;
+	font-size: 50%;
+}
+#message {
+	font-size: 50%;
+}
+#participantStatus {
+	color:       white;
+	line-height: 60px;
+	margin:      0px 10px;
+	position:    absolute;
+	left:        0px;
+}
+#connectionStatus {
+	color:       white;
+	line-height: 50px;
+	margin:      0px 10px;
+	position:    absolute;
+	right:       0px;
+	bottom:      10px;
+}
+#clientVersion {
+	color:       white;
+	line-height: 10px;
+	margin:      0px 10px;
+	position:    absolute;
+	right:       0px;
+	bottom:      3px;
+	font-size:   75%;
+}
+.center { text-align: center; }
+.options form  { }
+.options p     { text-align: center; }
+.options label { display: inline-block; width:105px; margin: 5px; padding: 4px; text-align: right; }
+.options input { display: inline-block; width:195px; margin: 5px; padding: 4px; }
+.options select{ display: inline-block; width:195px; margin: 5px; padding: 4px; }
+
+.logo {
+	margin: 20px;
+	width:  300px;
+}
+.optionsVisibiliyButtonElements {
+	width:               30px;
+	height:              30px;
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-color:    rgb(255, 255, 255);
+	border:              0;
+}
+.toolbarButton {
+	width:               60px;
+	height:              60px;
+	background-size:     32px auto;
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-color:    rgb(19, 38, 58);
+	border:              0;
+}
+
+.cameraOn      { background-image: url(Images/cameraOn.png); }
+.cameraOff     { background-image: url(Images/cameraOff.png); }
+.microphoneOn  { background-image: url(Images/microphoneOn.png); }
+.microphoneOff { background-image: url(Images/microphoneOff.png); }
+.callStart     { background-image: url(Images/callStart.png); }
+.callEnd       { background-image: url(Images/callEnd.png); }
+.showOptions   {
+	background-image: url(Images/showOptions.png);
+	background-size:  30px auto;
+	left:             0px;
+}
+.hideOptions {
+	background-image: url(Images/hideOptions.png);
+	background-size:  15px auto;
+	left:             0px;
+}
+
+/* Renderer Layout CSS */
+.pluginOverlay .videoContainer .frame video {
+	background-image:    url(Images/default_profile.svg);
+	background-repeat:   no-repeat;
+	background-position: center;
+	background-size:     33%;
+}
