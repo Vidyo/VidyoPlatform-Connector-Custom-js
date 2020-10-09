@@ -106,7 +106,7 @@
 		//We need to ensure we're loading the VidyoClient library and listening for the callback.
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src = 'https://static.vidyo.io/latest/javascript/VidyoClient/VidyoClient.js?ft=true&onload=onVidyoClientLoaded&webrtc=' + webrtc + '&plugin=' + plugin + webrtcLogLevel;
+		script.src = 'https://static.vidyo.io/latest/javascript/VidyoClient/VidyoClient.js?ft=true&webrtcserver=https://webrtc.vidyoconnect.com&onload=onVidyoClientLoaded&webrtc=' + webrtc + '&plugin=' + plugin + webrtcLogLevel;
 		//script.src = 'https://static.vidyo.io/latest/javascript/VidyoClient/VidyoClient.js?onload=onVidyoClientLoaded&webrtc=' + webrtc + '&plugin=' + plugin + webrtcLogLevel;
 		document.getElementsByTagName('head')[0].appendChild(script);
 	}
